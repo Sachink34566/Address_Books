@@ -25,7 +25,7 @@ namespace Address_Books
                 string lastname = Console.ReadLine();
                 if (!validation.IsName(lastname)) throw new InvalidNameException();
 
-               
+                if (SearchContact.DoesExist(list, firstname, lastname)) throw new AlreadyExit();
 
                 Console.WriteLine("Enter your address");
                 string address = Console.ReadLine();
