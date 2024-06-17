@@ -10,6 +10,8 @@ namespace Address_Books
     {
         static void Main(string[] args)
         {
+            List<Contacts> list = new List<Contacts>();
+            AddDetails.AddDetail(list);
         }
     }
 }
