@@ -14,6 +14,8 @@ namespace Address_Books
             AddDetails.AddDetail(list);
 
             EditDetails.EditingContact(list);
+
+            DeleteDetails.Deletecontact(list);
         }
     }
 }
