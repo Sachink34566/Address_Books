@@ -10,12 +10,11 @@ namespace Address_Books
     {
         static void Main(string[] args)
         {
-            List<Contacts> list = new List<Contacts>();
-            AddDetails.AddDetail(list);
+            Dictionary<string, List<string>> city = new Dictionary<string, List<string>>();
+            Dictionary<string, List<string>> state = new Dictionary<string, List<string>>();
+            MultipleAddressBook addressBook = new MultipleAddressBook(1, "Default");
 
-            EditDetails.EditingContact(list);
-
-            DeleteDetails.Deletecontact(list);
+            addressBook.Open(city, state);
         }
     }
 }
