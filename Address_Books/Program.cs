@@ -12,6 +12,8 @@ namespace Address_Books
         {
             List<Contacts> list = new List<Contacts>();
             AddDetails.AddDetail(list);
+
+            EditDetails.EditingContact(list);
         }
     }
 }
